@@ -183,6 +183,10 @@ Please follow the format in the example below for listing breaking changes in re
 
 * The deprecated `single_sign_on_enabled` property has been removed in favour of the `single_sign_on` property.
 
+### `azurerm_data_factory_integration_runtime_self_hosted`
+
+* Validation for `rbac_authorization.resource_id` has been changed to validate for an integration runtime resource ID (case-sensitive) rather than validating for a non-empty string.
+
 ### `azurerm_eventhub`
 
 * The deprecated `namespace_name` property has been removed in favour of the `namespace_id` property.
@@ -280,6 +284,10 @@ Please follow the format in the example below for listing breaking changes in re
 ### `azurerm_palo_alto_next_generation_firewall_virtual_network_panorama`
 
 * The `plan_id` property now defaults to `panw-cngfw-payg`.
+
+### `azurerm_policy_set_definition`
+
+* The `management_group_id` property has been removed in favour of the `azurerm_management_group_policy_set_definition` resource.
 
 ### `azurerm_redis_cache`
 
