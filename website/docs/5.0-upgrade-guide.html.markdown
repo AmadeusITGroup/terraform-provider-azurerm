@@ -802,6 +802,10 @@ use computed cross-resource references for key arguments.
 
 * The deprecated `name` property has been removed.
 
+### `azurerm_sentinel_threat_intelligence_indicator`
+
+* Changing the `description`, `display_name`, or `validate_from_utc` properties now forces a new resource to be created.
+
 ### `azurerm_servicebus_namespace`
 
 * The `minimum_tls_version` property no longer accepts `1.0` or `1.1` as a value.
